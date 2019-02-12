@@ -157,6 +157,15 @@ nav h1 a {
 	justify-content: center;
 	flex-wrap: wrap;
 }
+.filter-option-select-label {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.filter-label {
+	color: white;
+	padding-top: 5px;
+}
 .filter-text {
 	padding: 10px;
 }
