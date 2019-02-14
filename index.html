@@ -19,7 +19,7 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container" role="application">
+    <section id="map-container" role="application" aria-label="map">
       <div id="map"></div>
     </section>
     <section class="filter-options-container">
@@ -27,14 +27,14 @@
         <h2 class="filter-text">Filter Results</h2>
         <div class="filter-option-select">
           <div class="filter-option-select-label">
-            <label class="filter-label" for="neighborhoods-select">Neighborhoods</label>
-            <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="neighborhoods-select">
+            <label id="neihgborhoods-select-label" class="filter-label" for="neighborhoods-select">Neighborhoods</label>
+            <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-labelledby="neighborhoods-select-label">
               <option value="all">All Neighborhoods</option>
             </select>
           </div>
           <div class="filter-option-select-label">
-            <label class = "filter-label" for="cuisines-select">Cuisines</label>
-            <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="cuisines-select">
+            <label id="cuisines-select-label" class="filter-label" for="cuisines-select">Cuisines</label>
+            <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-labelledby="cuisines-select-label">
               <option value="all">All Cuisines</option>
             </select>
           </div>
